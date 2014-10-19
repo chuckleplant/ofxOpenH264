@@ -4,6 +4,8 @@
 #include "codec_def.h"
 #include "ofPixels.h"
 
+
+
 class ofxOpenH264
 {
 public:
@@ -17,7 +19,8 @@ public:
 private:
 	bool bSessionOpen;
 	ISVCEncoder * openH264Encoder;
-
 	SEncParamBase encoderParameters;
+	
+	unsigned char * yuvPlanes;
 };
 
